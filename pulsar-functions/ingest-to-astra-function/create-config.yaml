@@ -1,0 +1,18 @@
+tenant: jira-difli
+namespace: default
+name: ingest-to-astra-function
+# Update to the absolute path of the function's package
+py: /Users/dieter.flick/Documents/development/workspaces/workspace-jira/demo/pulsar-functions/ingest-to-astra-function/ingest-to-astra.zip
+# className convention: filename.classname
+className: ingest-to-astra.IngestToAstraFunction
+parallelism: 1
+inputs:
+ - persistent://jira-difli/default/jira-stream-vectorized
+autoAck: true
+logTopic: persistent://jira-difli/default/jira-stream-log
+userConfig:
+  astra_db_api_endpoint: https://5762f596-3f12-4c00-8df9-7fea96eb2564-us-east-2.apps.astra.datastax.com
+  astra_db_application_token: AstraCS:zdFInUQCFmFmligggWUTuxPk:7d98b59398c9f2d907297112380df7001b40bb865f5095591b0d4b5321525faa
+  collection: jira_data
+  astra_openai_api_key_name: MY_OPENAI_API_KEY
+  logging_level: DEBUG

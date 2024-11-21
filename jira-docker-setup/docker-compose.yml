@@ -1,0 +1,31 @@
+version: '3'
+services:
+  jira:
+    image: atlassian/jira-software
+    container_name: jira
+    ports:
+      - "8080:8080"
+    environment:
+      - ATL_JDBC_URL=jdbc:postgresql://jira-postgres:5432/jiradb
+      - ATL_JDBC_USER=jira
+      - ATL_JDBC_PASSWORD=jira
+    depends_on:
+      - jira-postgres
+    volumes:
+      - jira_data:/var/atlassian/application-data/jira
+
+  jira-postgres:
+    image: postgres:latest
+    container_name: jira-postgres
+    environment:
+      - POSTGRES_USER=jira
+      - POSTGRES_PASSWORD=jira
+      - POSTGRES_DB=jiradb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  jira_data:
+  postgres_data:

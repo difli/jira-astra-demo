@@ -1,0 +1,34 @@
+# Python virtual environment
+venv/
+.env
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+**/.env
+
+# Secrets files
+secrets.toml
+**/secrets.toml
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE files
+.vscode/
+.idea/
+
+# Output files
+*.csv
+*.sqlite3
+*.db
+*.bak
+*.tmp
