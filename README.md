@@ -116,10 +116,6 @@ Before proceeding, ensure the following:
 
 ---
 
-Here’s a detailed version of the **Setup Instructions** section, including all the necessary information to help users properly configure and run the project.
-
----
-
 ## Setup Instructions
 
 
@@ -157,6 +153,7 @@ Here’s a detailed version of the **Setup Instructions** section, including all
 1. **Set up Jira using Docker**:
    - Use the provided [`docker-compose.yml`](jira-docker-setup/docker-compose.yml) file to set up Jira and Postgres:
      ```bash
+     cd jira-docker-setup
      docker-compose up -d
      ```
 
@@ -182,7 +179,7 @@ Here’s a detailed version of the **Setup Instructions** section, including all
 1. Log in to your **Astra DB** account and create a new vector-enabled collection.
 2. Enable **vectorization** for the collection:
    - Use OpenAI as the vectorization provider.
-   - Use the small embedding model for efficiency and scalability.
+   - Use `text-embedding-3-small` as the embedding model.
 3. Recommended collection name: `jira_data`.
 
 #### **2. Set Up Astra Streaming**:
