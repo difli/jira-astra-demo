@@ -82,6 +82,9 @@ The architecture includes the following components:
 
 4. **Streamlit Application**:
    - [`app.py`](jira-streamlit/app.py): Provides a user interface for querying data and tracking Jira updates.
+   - **Example Query**: "Which issues are similar to TES-10?"
+     ![Jira Similar Issues](assets/jira-issues-similar-to-tes-10.png "Find Similar Issues")
+
 
 5. **Agent Integration**:
    - **Jira Assistant agent** provides enhanced capabilities for semantic search and json data queries powered by astrapy ([repo here](https://github.com/difli/jira-astra-agent)).
@@ -92,8 +95,8 @@ The architecture includes the following components:
 
 Once the application is running, explore real-time Jira updates and advanced queries:
 
-- **Example Query**: "Which issues are similar to TES-10?"
-  ![Jira Similar Issues](assets/jira-issues-similar-to-tes-10.png "Find Similar Issues")
+- **Update a Jira Issue**
+  ![Update Jira Issues](assets/jira-edit-comment.png "Update Jira Issues")
 
 - **Interactive Agent Chat**: "Find the issue with a comment about a test to demonstrate real-time vectorization."
   ![Agent Chat Interface](assets/assistent-agent-chat.png "Agent Chat Interface")
@@ -105,10 +108,10 @@ Once the application is running, explore real-time Jira updates and advanced que
 Before proceeding, ensure the following:
 
 1. **Docker and Docker Compose** are installed.
-2. **Astra DB** and **Astra Streaming** accounts are created.
+2. [**Astra DB** and **Astra Streaming**](https://astra.datastax.com) accounts are created.
 3. **Python** is installed, along with dependencies from [`requirements.txt`](jira-streamlit/requirements.txt).
 4. **OpenAI API Key** for AI-powered features.
-5. **Jira License Key** (trial version) for Jira setup on Docker.
+5. **Jira License Key** (trial version) for Jira setup on Docker. You will be guided by the installation process once you start the setup of your Jira instance in docker.
 
 ---
 
