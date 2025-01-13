@@ -281,3 +281,33 @@ Before setting up Astra Streaming, ensure you have [**Apache Pulsar 3.3.2**](htt
    - Query Jira issues using vector search or the **Jira Assistant agent**.
 
 ---
+
+### Step 10: Integrate with Langflow
+
+1. **Import the Flow**:  
+   - Import the provided [JIRA Assistant.json](./JIRA%20Assistant.json) flow file into **Langflow**.  
+
+2. **Configure Credentials**:  
+   - Set up the required credentials within the imported flow components. 
+
+3. **Locate the API Endpoint**:  
+   - Click the **API** button within Langflow to display the flow's API endpoint details.  
+
+     ![Langflow Flow](assets/langflow-flow.png "Langflow Flow Example")
+
+4. **Copy the API Endpoint**:  
+   - Copy the generated API endpoint URL displayed in the Langflow interface.  
+
+     ![Langflow API](assets/langflow-api.png "Langflow API Example")
+
+5. **Integrate with the Application**:  
+   - Navigate to the **Langflow powered Chat** tab within the application.  
+   - Paste the API endpoint into the designated input field for Langflow integration.
+
+6. **Test the Integration**:  
+   - Use the application interface to ask a sample question related to Jira, such as:  
+     _"What are the updates for issue TES-10?"_
+
+     ![Langflow API](assets/app-langflow-config.png "Langflow API Example")
+
+By following these steps, Langflow integration will enhance your application's capabilities, enabling advanced interactions powered by the configured Langflow flow.
