@@ -20,7 +20,7 @@ This project demonstrates a **real-time generative AI demo** built for **Jira As
    - [Step 7: Run the Jira Webhook Script](#step-7-run-the-jira-webhook-script)
    - [Step 8: Configure Streamlit Application](#step-8-configure-streamlit-application)
    - [Step 9: Run the Application](#step-9-run-the-application)
-   - [Step 10: Integrate with Langflow](#step-9-integrate-with-langflow)
+   - [Step 10: Integrate with Langflow](#step-10-integrate-with-langflow)
 6. [Running the Application](#running-the-application)
 
 ---
