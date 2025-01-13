@@ -310,5 +310,3 @@ Before setting up Astra Streaming, ensure you have [**Apache Pulsar 3.3.2**](htt
      _"What are the updates for issue TES-10?"_
 
      ![Langflow API](assets/app-langflow-config.png "Langflow API Example")
-
-By following these steps, Langflow integration will enhance your application's capabilities, enabling advanced interactions powered by the configured Langflow flow.
