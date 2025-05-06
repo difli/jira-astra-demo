@@ -360,6 +360,6 @@ with tab4:
                 headers={"Authorization": f"Bearer {st.secrets['ASTRA_DB_APPLICATION_TOKEN']}"},
                 json={"input_value": query, "output_type": "chat", "input_type": "chat"}
             )
-            result = response.json()["outputs"][0]["outputs"][0]["outputs"]["message"]["message"]["text"]
+            result = response.json()["outputs"][0]["outputs"][0]["outputs"]["message"]["message"]
             st.session_state.chat_thread.append({'role': 'assistant', 'content': result})
             messages.markdown(f"**Assistant**: {result}")
